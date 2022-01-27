@@ -1,13 +1,9 @@
 <template>
-
+  <Tutorial/>
 </template>
 
 <script>
 export default {
-  name: "index.vue"
+  name: 'IndexPage'
 }
 </script>
-
-<style scoped>
-
-</style>
