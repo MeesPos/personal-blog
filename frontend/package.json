@@ -7,5 +7,9 @@
   },
   "devDependencies": {
     "nuxt3": "latest"
+  },
+  "dependencies": {
+    "@nuxtjs/auth-next": "5.0.0-1643278128.1c7fef7",
+    "@nuxtjs/axios": "^5.13.6"
   }
 }
