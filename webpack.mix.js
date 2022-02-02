@@ -15,6 +15,12 @@ mix.js('resources/js/app.js', 'public/js')
     .extract()
     .vue(3)
     .postCss('resources/css/app.css', 'public/css', [
-        require("tailwindcss"),
+        require('postcss-import'),
+        require('tailwindcss'),
+        require('autoprefixer'),
     ])
-    .version();
+    .webpackConfig(require('./webpack.config'));
+
+if (mix.inProduction()) {
+    mix.version();
+}
