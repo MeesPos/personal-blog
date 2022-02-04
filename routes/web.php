@@ -30,6 +30,8 @@ Route::prefix('dashboard')->group(function () {
         ->name('dashboard');
 
     Route::resource('articles', \App\Http\Controllers\Admin\ArticleController::class);
+
+    Route::resource('categories', \App\Http\Controllers\Admin\CategoryController::class);
 });
 
 
