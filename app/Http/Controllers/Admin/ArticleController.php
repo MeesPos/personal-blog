@@ -10,17 +10,12 @@ class ArticleController extends Controller
 {
     public function index(): \Inertia\Response
     {
-        return Inertia::render('Dashboard/Articles');
+        return Inertia::render('Dashboard/Articles/Index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function create(): \Inertia\Response
     {
-        //
+        return Inertia::render('Dashboard/Articles/Create');
     }
 
     /**
