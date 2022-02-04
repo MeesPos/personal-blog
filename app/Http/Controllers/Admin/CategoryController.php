@@ -13,14 +13,9 @@ class CategoryController extends Controller
         return Inertia::render('Dashboard/Categories/Index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function create(): \Inertia\Response
     {
-        //
+        return Inertia::render('Dashboard/Categories/Create');
     }
 
     /**
